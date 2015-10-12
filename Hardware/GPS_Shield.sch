@@ -22980,7 +22980,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP5" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="TXB0108" device=""/>
 <part name="J3" library="SparkFun-RF" deviceset="GP-735" device="-VERTICAL"/>
-<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -23047,6 +23046,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+7" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="P+11" library="SparkFun" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23106,6 +23106,8 @@ to be disconnected from D10</text>
 GPS RX and TX to/from D8 and D9.</text>
 <text x="106.68" y="175.26" size="1.27" layer="97">GP3906 VCC 
 Range: 3.3V +/-5%</text>
+<text x="137.16" y="175.26" size="1.27" layer="97">GP-735 VCC 
+Range: 3.1V-5.5V</text>
 </plain>
 <instances>
 <instance part="BAT1" gate="G$1" x="203.2" y="160.02" rot="R270"/>
@@ -23142,7 +23144,6 @@ Range: 3.3V +/-5%</text>
 </instance>
 <instance part="U3" gate="G$1" x="203.2" y="111.76" rot="MR0"/>
 <instance part="J3" gate="G$1" x="149.86" y="160.02"/>
-<instance part="SUPPLY7" gate="G$1" x="137.16" y="167.64"/>
 <instance part="SUPPLY8" gate="G$1" x="203.2" y="170.18" smashed="yes">
 <attribute name="VALUE" x="203.2" y="173.736" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -23262,6 +23263,7 @@ Range: 3.3V +/-5%</text>
 <instance part="R3" gate="G$1" x="142.24" y="127" rot="R90"/>
 <instance part="P+6" gate="G$1" x="134.62" y="134.62"/>
 <instance part="P+7" gate="G$1" x="142.24" y="134.62"/>
+<instance part="P+11" gate="G$1" x="137.16" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -23519,14 +23521,14 @@ Range: 3.3V +/-5%</text>
 <pinref part="P+7" gate="G$1" pin="3.3V"/>
 <wire x1="142.24" y1="134.62" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="5V" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="VCC"/>
+<pinref part="P+11" gate="G$1" pin="3.3V"/>
 <wire x1="139.7" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="165.1" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="G$1" pin="5V"/>
 </segment>
+</net>
+<net name="5V" class="0">
 <segment>
 <pinref part="SJ3" gate="G$1" pin="3"/>
 <wire x1="127" y1="55.88" x2="127" y2="53.34" width="0.1524" layer="91"/>
