@@ -396,7 +396,9 @@ GPS</text>
 <connect gate="G$1" pin="VBACKUP" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="GPS-13174"/>
+</technology>
 </technologies>
 </device>
 </devices>

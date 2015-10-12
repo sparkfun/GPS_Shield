@@ -22848,7 +22848,9 @@ GPS</text>
 <connect gate="G$1" pin="VBACKUP" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="GPS-13174"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -22979,7 +22981,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP14" library="SparkFun-Connectors" deviceset="M10" device="NO_SILK_PTH_FEMALE"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="TXB0108" device=""/>
-<part name="J3" library="SparkFun-RF" deviceset="GP-735" device="-VERTICAL"/>
+<part name="J3" library="SparkFun-RF" deviceset="GP-735" device="-VERTICAL" value="DNP (GP-735-VERTICAL)"/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -23843,9 +23845,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP18" gate="G$1" pin="5"/>
-<wire x1="180.34" y1="157.48" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
-<label x="177.8" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="JP18" gate="G$1" pin="4"/>
+<wire x1="180.34" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
+<label x="177.8" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
@@ -23865,9 +23867,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP18" gate="G$1" pin="4"/>
-<wire x1="180.34" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
-<label x="177.8" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="JP18" gate="G$1" pin="3"/>
+<wire x1="180.34" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
+<label x="177.8" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_FIX" class="0">
@@ -23899,9 +23901,9 @@ Range: 3.1V-5.5V</text>
 <label x="137.16" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP18" gate="G$1" pin="3"/>
-<wire x1="180.34" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
-<label x="177.8" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="JP18" gate="G$1" pin="5"/>
+<wire x1="180.34" y1="157.48" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
+<label x="177.8" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
