@@ -22761,11 +22761,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8" y1="8" x2="8" y2="7.45" width="0.2032" layer="21"/>
 <wire x1="-8" y1="-8" x2="-8" y2="-7.45" width="0.2032" layer="21"/>
 <wire x1="8" y1="-8" x2="8" y2="-7.45" width="0.2032" layer="21"/>
-<circle x="0" y="-8" radius="0.5" width="0" layer="21"/>
-<circle x="4" y="8" radius="0.5" width="0" layer="21"/>
-<circle x="-4" y="8" radius="0.5" width="0" layer="21"/>
+<circle x="8.509" y="-8.508" radius="0.5" width="0" layer="21"/>
 <text x="0" y="5.08" size="1.016" layer="25" align="top-center">&gt;Name</text>
 <text x="0" y="3.81" size="1.016" layer="27" align="top-center">&gt;Value</text>
+<circle x="5.08" y="-3.809" radius="0.5" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
