@@ -2307,33 +2307,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="Gold_Phoenix_Standard_Spec_2_layer *">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="SparkFun-2-layer-TIGHT">
+<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - STANDARD/TIGHT/FAB-LIMIT&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+These rules have been curated by SparkFuns DFM commitee. After doing much research, communicating with our multiple fab houses, and getting quotes of various designs, we have compiled three DRU files. 
+&lt;p&gt;
+&lt;b&gt;STANDARD:&lt;/b&gt; This is more of a &quot;best case scenario&quot; set of limitations. If your design has the space, and/or you have the time to work within these parameters, please do. Larger trace width and clearance makes for easier visual inspection of the PCB while troubleshooting (useful in production and to the end user). It also allows for better ability to hack a trace (if you are crazy enough to scrape away the mask and solder to a trace). Another thing to keep in mind is that more metal is just more robust. 
+&lt;p&gt;
+&lt;b&gt;TIGHT:&lt;/b&gt; This is where cost comes into play. We have found that most fab houses begin to add extra charges when you go smaller than these specs. In some cases, going to less than 15 mil trace can increase the cost by 10%. (This is why we have set the min drill on this DRU to 15 mil) Same story for traces thinner than 7 mil. To avoid those extra charges, then stay within the rules of this DRU.
+&lt;p&gt;
+&lt;b&gt;FAB-LIMIT:&lt;/b&gt; These set of rules are at the very limit of most fab houses capabilities. You will pay more for these specs, and it should be used on designs that have a darned good reason to need 4 mil vias and 4 mil traces.
+&lt;p&gt;
+**NOTE Clearance, Distance, Sizes, and Restring are all set to different limits in each of these three DRU files. Please compare the files within the CAM job editor window of eagle to see all the numbers.
+&lt;p&gt;
+***NOTE, Please set your Net Classes to default (0mil for all settings), so that it won't effect the DRC when you run it with these settings.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="8mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="7mil"/>
+<param name="mdDrill" value="7mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="5mil"/>
-<param name="msDrill" value="6mil"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -2343,15 +2349,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="5mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="5mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -2632,9 +2638,9 @@ design rules under a new name.</description>
 <wire x1="39.655" y1="37.815" x2="39.37" y2="38.1" width="0.2032" layer="1"/>
 <via x="39.37" y="38.1" extent="1-16" drill="0.508"/>
 <wire x1="39.37" y1="38.1" x2="35.306" y2="38.1" width="0.2032" layer="16"/>
-<wire x1="24.395" y1="37.57" x2="26.184" y2="37.57" width="0.2032" layer="1"/>
-<wire x1="26.184" y1="37.57" x2="26.543" y2="37.211" width="0.2032" layer="1"/>
-<wire x1="26.543" y1="37.211" x2="34.417" y2="37.211" width="0.2032" layer="1"/>
+<wire x1="24.395" y1="37.57" x2="26.057" y2="37.57" width="0.2032" layer="1"/>
+<wire x1="26.057" y1="37.57" x2="26.416" y2="37.211" width="0.2032" layer="1"/>
+<wire x1="26.416" y1="37.211" x2="34.417" y2="37.211" width="0.2032" layer="1"/>
 <wire x1="34.417" y1="37.211" x2="35.306" y2="38.1" width="0.2032" layer="1"/>
 <via x="35.306" y="38.1" extent="1-16" drill="0.508"/>
 </signal>
@@ -3155,9 +3161,9 @@ design rules under a new name.</description>
 <contactref element="SJ8" pad="1"/>
 <wire x1="23.368" y1="41.021" x2="36.576" y2="41.021" width="0.2032" layer="16"/>
 <wire x1="36.576" y1="41.021" x2="37.846" y2="42.291" width="0.2032" layer="16"/>
-<wire x1="37.846" y1="42.291" x2="52.197" y2="42.291" width="0.2032" layer="16"/>
-<wire x1="54.75000625" y1="30.4299875" x2="54.75000625" y2="39.73799375" width="0.2032" layer="16"/>
-<wire x1="54.75000625" y1="39.73799375" x2="52.197" y2="42.291" width="0.2032" layer="16"/>
+<wire x1="37.846" y1="42.291" x2="52.07" y2="42.291" width="0.2032" layer="16"/>
+<wire x1="54.75000625" y1="30.4299875" x2="54.75000625" y2="39.61099375" width="0.2032" layer="16"/>
+<wire x1="54.75000625" y1="39.61099375" x2="52.07" y2="42.291" width="0.2032" layer="16"/>
 <wire x1="22.606" y1="42.4942" x2="22.606" y2="41.783" width="0.2032" layer="16"/>
 <wire x1="23.368" y1="41.021" x2="22.606" y2="41.783" width="0.2032" layer="16"/>
 </signal>
@@ -3178,9 +3184,9 @@ design rules under a new name.</description>
 <contactref element="SJ10" pad="1"/>
 <wire x1="25.4" y1="42.3672" x2="25.4" y2="41.656" width="0.2032" layer="16"/>
 <wire x1="25.4" y1="41.656" x2="25.654" y2="41.402" width="0.2032" layer="16"/>
-<wire x1="25.654" y1="41.402" x2="36.449" y2="41.402" width="0.2032" layer="16"/>
-<wire x1="36.449" y1="41.402" x2="37.719" y2="42.672" width="0.2032" layer="16"/>
-<wire x1="37.719" y1="42.672" x2="52.324" y2="42.672" width="0.2032" layer="16"/>
+<wire x1="25.654" y1="41.402" x2="36.322" y2="41.402" width="0.2032" layer="16"/>
+<wire x1="36.322" y1="41.402" x2="37.592" y2="42.672" width="0.2032" layer="16"/>
+<wire x1="37.592" y1="42.672" x2="52.324" y2="42.672" width="0.2032" layer="16"/>
 <wire x1="57.29000625" y1="27.8899875" x2="58.674" y2="29.27398125" width="0.2032" layer="16"/>
 <wire x1="58.674" y1="29.27398125" x2="58.674" y2="36.322" width="0.2032" layer="16"/>
 <wire x1="58.674" y1="36.322" x2="52.324" y2="42.672" width="0.2032" layer="16"/>
@@ -3188,13 +3194,14 @@ design rules under a new name.</description>
 <signal name="HV_MOSI">
 <contactref element="SJ10" pad="2"/>
 <contactref element="U3" pad="18"/>
-<wire x1="24.395" y1="40.37" x2="25.257" y2="40.37" width="0.2032" layer="1"/>
-<wire x1="25.257" y1="40.37" x2="26.035" y2="41.148" width="0.2032" layer="1"/>
-<wire x1="26.035" y1="41.148" x2="26.035" y2="41.91" width="0.2032" layer="1"/>
-<wire x1="26.035" y1="41.91" x2="23.876" y2="44.069" width="0.2032" layer="1"/>
-<via x="23.876" y="44.069" extent="1-16" drill="0.508"/>
-<wire x1="25.4" y1="43.18" x2="24.765" y2="43.18" width="0.2032" layer="16"/>
-<wire x1="24.765" y1="43.18" x2="23.876" y2="44.069" width="0.2032" layer="16"/>
+<wire x1="24.395" y1="40.37" x2="25.511" y2="40.37" width="0.2032" layer="1"/>
+<wire x1="25.511" y1="40.37" x2="26.035" y2="40.894" width="0.2032" layer="1"/>
+<wire x1="26.035" y1="40.894" x2="26.035" y2="42.164" width="0.2032" layer="1"/>
+<wire x1="26.035" y1="42.164" x2="23.876" y2="44.323" width="0.2032" layer="1"/>
+<via x="23.876" y="44.323" extent="1-16" drill="0.508"/>
+<wire x1="25.4" y1="43.18" x2="24.511" y2="43.18" width="0.2032" layer="16"/>
+<wire x1="23.876" y1="44.323" x2="23.876" y2="43.815" width="0.2032" layer="16"/>
+<wire x1="23.876" y1="43.815" x2="24.511" y2="43.18" width="0.2032" layer="16"/>
 </signal>
 <signal name="HV_MISO">
 <contactref element="U3" pad="20"/>
@@ -3213,11 +3220,11 @@ design rules under a new name.</description>
 <signal name="HV_SCK">
 <contactref element="U3" pad="19"/>
 <contactref element="SJ7" pad="2"/>
-<wire x1="24.395" y1="40.77" x2="25.149" y2="40.77" width="0.2032" layer="1"/>
-<wire x1="25.149" y1="40.77" x2="25.654" y2="41.275" width="0.2032" layer="1"/>
-<wire x1="25.654" y1="41.275" x2="25.654" y2="41.783" width="0.2032" layer="1"/>
-<wire x1="25.654" y1="41.783" x2="24.13" y2="43.307" width="0.2032" layer="1"/>
-<wire x1="24.13" y1="43.307" x2="21.209" y2="43.307" width="0.2032" layer="1"/>
+<wire x1="24.395" y1="40.77" x2="25.276" y2="40.77" width="0.2032" layer="1"/>
+<wire x1="25.276" y1="40.77" x2="25.654" y2="41.148" width="0.2032" layer="1"/>
+<wire x1="25.654" y1="41.148" x2="25.654" y2="41.91" width="0.2032" layer="1"/>
+<wire x1="25.654" y1="41.91" x2="24.257" y2="43.307" width="0.2032" layer="1"/>
+<wire x1="24.257" y1="43.307" x2="21.209" y2="43.307" width="0.2032" layer="1"/>
 <wire x1="21.209" y1="43.307" x2="21.082" y2="43.18" width="0.2032" layer="1"/>
 <via x="21.082" y="43.18" extent="1-16" drill="0.508"/>
 <wire x1="21.082" y1="43.18" x2="19.685" y2="43.18" width="0.2032" layer="16"/>
@@ -3226,8 +3233,10 @@ design rules under a new name.</description>
 <contactref element="JP17" pad="1"/>
 <contactref element="SJ6" pad="1"/>
 <contactref element="U3" pad="17"/>
-<wire x1="24.395" y1="39.97" x2="25.365" y2="39.97" width="0.2032" layer="1"/>
-<wire x1="25.365" y1="39.97" x2="27.686" y2="42.291" width="0.2032" layer="1"/>
+<wire x1="24.395" y1="39.97" x2="25.746" y2="39.97" width="0.2032" layer="1"/>
+<wire x1="25.746" y1="39.97" x2="26.416" y2="40.64" width="0.2032" layer="1"/>
+<wire x1="26.416" y1="40.64" x2="26.416" y2="41.021" width="0.2032" layer="1"/>
+<wire x1="26.416" y1="41.021" x2="27.686" y2="42.291" width="0.2032" layer="1"/>
 <wire x1="27.686" y1="43.18" x2="27.686" y2="42.291" width="0.2032" layer="1"/>
 <wire x1="27.686" y1="43.942" x2="27.686" y2="43.18" width="0.2032" layer="16"/>
 </signal>
@@ -3457,6 +3466,62 @@ design rules under a new name.</description>
 <approved hash="19,16,1f0fba0deab6db77"/>
 <approved hash="19,16,c14914f947267257"/>
 <approved hash="19,16,41de98668ac6b3bf"/>
+<approved hash="19,16,458761abadc15366"/>
+<approved hash="19,16,4060b34544874a72"/>
+<approved hash="19,16,7e44a331d410f50e"/>
+<approved hash="19,16,f720c441c33f9d0d"/>
+<approved hash="19,16,819d66fb23f638fb"/>
+<approved hash="19,16,33f8009b1391cb89"/>
+<approved hash="19,16,bfd277c8b30a86c0"/>
+<approved hash="19,16,c72830d8b512beac"/>
+<approved hash="19,16,04cd94608143b993"/>
+<approved hash="19,16,487fe0db5244529d"/>
+<approved hash="19,16,b855d64991105771"/>
+<approved hash="19,16,39e8add480b4bcf5"/>
+<approved hash="19,16,b3c71bfb17f4bfc8"/>
+<approved hash="5,16,185bdcd7045bd38b"/>
+<approved hash="19,16,b23f1a031bbcb380"/>
+<approved hash="5,16,aed538b2dfe52306"/>
+<approved hash="19,16,debde3b4dd1648e1"/>
+<approved hash="19,16,09540c57982d35d0"/>
+<approved hash="19,16,b517dda38bfc4bb6"/>
+<approved hash="19,16,3529227f9a0025a8"/>
+<approved hash="19,16,b3f81bc41ab4b288"/>
+<approved hash="5,16,13195c126fe25f4d"/>
+<approved hash="19,16,b2201a1c0604ae38"/>
+<approved hash="5,16,a11e53b55de62ab8"/>
+<approved hash="5,16,df134cc8bccbd1f6"/>
+<approved hash="5,16,a221e927bf9573ad"/>
+<approved hash="19,16,745558d449ccdeb6"/>
+<approved hash="19,16,b76f61c809696435"/>
+<approved hash="19,16,8a4db4fc08998dd3"/>
+<approved hash="19,16,68ff6e416618db5d"/>
+<approved hash="19,16,2f3e4b024a822ebe"/>
+<approved hash="19,16,2ec64afa46ca22f6"/>
+<approved hash="19,16,79425a8d802347e5"/>
+<approved hash="19,16,5ac72e7f87ee2352"/>
+<approved hash="19,16,44f0684053829b3b"/>
+<approved hash="19,16,0b4e4a2ef7ad66c9"/>
+<approved hash="19,16,428a4f9d430e5ee5"/>
+<approved hash="19,16,a91f990a8555a5bc"/>
+<approved hash="19,16,bdbc51e2a1b1131f"/>
+<approved hash="19,16,bd8e5c2c6dc3d291"/>
+<approved hash="19,16,91ec9545bf8a3f25"/>
+<approved hash="19,16,6e5a6f28ebadf2da"/>
+<approved hash="19,16,845c8f852426abf9"/>
+<approved hash="19,16,7fd44b7f13e83f46"/>
+<approved hash="19,16,e68d8386161c2bec"/>
+<approved hash="19,16,65163d18f04ef0bb"/>
+<approved hash="19,16,1b8e5c31acd72990"/>
+<approved hash="19,16,1bbc51ff60a5e81e"/>
+<approved hash="19,16,9edb327aa7880710"/>
+<approved hash="19,16,e956e810cf9326ee"/>
+<approved hash="19,16,236980871c19b3ce"/>
+<approved hash="19,16,f8e0cc41c7d01b4a"/>
+<approved hash="19,16,19101d2d6f4283bc"/>
+<approved hash="19,16,c68aff8a6529b4ea"/>
+<approved hash="19,16,a9bc51f47ba84121"/>
+<approved hash="19,16,a98e5c3ab7da80af"/>
 </errors>
 </board>
 </drawing>
