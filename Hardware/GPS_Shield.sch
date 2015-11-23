@@ -23111,8 +23111,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="SparkFun-Connectors" deviceset="M10" device="NO_SILK_PTH_FEMALE"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M10" device="NO_SILK_PTH_FEMALE"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M07" device="NO_SILK"/>
-<part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M" value="OSHW-LOGOM"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="PWR-LED"/>
@@ -23325,8 +23323,6 @@ Range: 3.1V-5.5V</text>
 <attribute name="VALUE" x="2.54" y="109.22" size="1.778" layer="96"/>
 <attribute name="NAME" x="1.778" y="119.38" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="P+8" gate="G$1" x="177.8" y="170.18" rot="MR0"/>
-<instance part="GND14" gate="1" x="177.8" y="147.32" rot="MR0"/>
 <instance part="LOGO2" gate="G$1" x="190.5" y="35.56"/>
 <instance part="LOGO1" gate="G$1" x="109.22" y="10.16"/>
 <instance part="SJ2" gate="G$1" x="50.8" y="165.1" smashed="yes">
@@ -23366,9 +23362,9 @@ Range: 3.1V-5.5V</text>
 <instance part="SUPPLY7" gate="G$1" x="226.06" y="154.94" smashed="yes">
 <attribute name="VALUE" x="226.06" y="158.496" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="JP21" gate="G$1" x="276.86" y="157.48" rot="R180"/>
-<instance part="P+13" gate="G$1" x="269.24" y="167.64" rot="MR0"/>
-<instance part="GND19" gate="1" x="269.24" y="142.24" rot="MR0"/>
+<instance part="JP21" gate="G$1" x="180.34" y="162.56" rot="R180"/>
+<instance part="P+13" gate="G$1" x="172.72" y="172.72" rot="MR0"/>
+<instance part="GND19" gate="1" x="172.72" y="147.32" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -23486,11 +23482,6 @@ Range: 3.1V-5.5V</text>
 <wire x1="30.48" y1="78.74" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="180.34" y1="152.4" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="152.4" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="152.4" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
@@ -23558,8 +23549,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="8"/>
-<wire x1="271.78" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="147.32" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="152.4" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -23604,11 +23595,6 @@ Range: 3.1V-5.5V</text>
 <junction x="43.18" y="165.1"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="167.64" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="167.64" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="P+8" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="45.72" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
@@ -23644,8 +23630,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="165.1" x2="269.24" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="165.1" x2="269.24" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="170.18" x2="172.72" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="170.18" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -23694,13 +23680,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
-<label x="177.8" y="154.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP21" gate="G$1" pin="7"/>
-<wire x1="271.78" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
-<label x="269.24" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<label x="172.72" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HW_RX" class="0">
@@ -23897,8 +23879,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="162.56" x2="269.24" y2="162.56" width="0.1524" layer="91"/>
-<label x="269.24" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
+<label x="172.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CD" class="0">
@@ -23978,13 +23960,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
-<label x="177.8" y="160.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP21" gate="G$1" pin="5"/>
-<wire x1="271.78" y1="154.94" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
-<label x="269.24" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
+<label x="172.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
@@ -24004,13 +23982,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
-<label x="177.8" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP21" gate="G$1" pin="4"/>
-<wire x1="271.78" y1="157.48" x2="269.24" y2="157.48" width="0.1524" layer="91"/>
-<label x="269.24" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="162.56" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
+<label x="172.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_FIX" class="0">
@@ -24020,18 +23994,14 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="165.1" x2="177.8" y2="165.1" width="0.1524" layer="91"/>
-<label x="177.8" y="165.1" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SJ9" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="180.34" x2="226.06" y2="180.34" width="0.1524" layer="91"/>
 <label x="226.06" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="3"/>
-<wire x1="271.78" y1="160.02" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
-<label x="269.24" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="165.1" x2="172.72" y2="165.1" width="0.1524" layer="91"/>
+<label x="172.72" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_RST" class="0">
@@ -24046,13 +24016,9 @@ Range: 3.1V-5.5V</text>
 <label x="137.16" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="180.34" y1="157.48" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
-<label x="177.8" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP21" gate="G$1" pin="6"/>
-<wire x1="271.78" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
-<label x="269.24" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
+<label x="172.72" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
