@@ -2577,7 +2577,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="JP21" library="SparkFun-Connectors" package="1X08_NO_SILK" value="" x="21.59" y="15.24" rot="R90">
 <attribute name="PROD_ID" value="CONN-08438" x="21.59" y="15.24" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="SJ12" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK" value="VBAT-3.3V" x="1.905" y="11.43" rot="R270"/>
+<element name="SJ11" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK" value="VBAT-3.3V" x="1.905" y="11.43" rot="R270"/>
 </elements>
 <signals>
 <signal name="RX">
@@ -2726,7 +2726,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="19.812" y1="8.89" x2="19.304" y2="9.398" width="0.3048" layer="16"/>
 <wire x1="19.304" y1="9.398" x2="18.5928" y2="9.398" width="0.3048" layer="16"/>
 <wire x1="17.995" y1="35.98" x2="19.265" y2="34.71" width="0.2032" layer="1"/>
-<contactref element="SJ12" pad="1"/>
+<contactref element="SJ11" pad="1"/>
 <wire x1="19.05" y1="12.28" x2="15.406" y2="12.28" width="0.254" layer="1"/>
 <wire x1="15.406" y1="12.28" x2="14.771" y2="12.915" width="0.254" layer="1"/>
 <wire x1="1.905" y1="11.8309" x2="2.8139" y2="11.8309" width="0.254" layer="1"/>
@@ -2890,7 +2890,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="20.03" y1="19.34" x2="21.59" y2="17.78" width="0.254" layer="1"/>
 <wire x1="21.59" y1="17.78" x2="19.05" y2="15.24" width="0.254" layer="16"/>
 <wire x1="19.05" y1="15.24" x2="19.05" y2="13.462" width="0.254" layer="16"/>
-<contactref element="SJ12" pad="2"/>
+<contactref element="SJ11" pad="2"/>
 <wire x1="1.905" y1="11.0173" x2="3.3973" y2="11.0173" width="0.254" layer="1"/>
 <wire x1="3.3973" y1="11.0173" x2="3.81" y2="11.43" width="0.254" layer="1"/>
 <via x="3.81" y="11.43" extent="1-16" drill="0.508"/>

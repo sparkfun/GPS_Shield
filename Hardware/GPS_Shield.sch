@@ -23015,7 +23015,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP21" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK_FEMALE_PTH"/>
 <part name="P+13" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
-<part name="SJ12" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device="" value="VBAT-3.3V"/>
+<part name="SJ11" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device="" value="VBAT-3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -23055,7 +23055,7 @@ output</text>
 <text x="50.8" y="170.18" size="1.27" layer="97">SJ1 disconnects 
 the power LED 
 indicator</text>
-<text x="177.8" y="175.26" size="1.27" layer="97" rot="MR0" align="top-left">SJ9 disconnects the
+<text x="175.26" y="175.26" size="1.27" layer="97" rot="MR0" align="top-left">SJ9 disconnects the
 GPS fix LED indicator</text>
 <text x="17.78" y="60.96" size="1.27" layer="97" align="top-left">SJ2 selects 3.3V
 or 5V on the
@@ -23231,14 +23231,14 @@ V_BATT Range: 2.0V-4.3V</text>
 <instance part="R3" gate="G$1" x="142.24" y="127" rot="R90"/>
 <instance part="P+6" gate="G$1" x="134.62" y="134.62"/>
 <instance part="P+7" gate="G$1" x="142.24" y="134.62"/>
-<instance part="P+12" gate="G$1" x="215.9" y="154.94" rot="MR0"/>
-<instance part="SUPPLY7" gate="G$1" x="231.14" y="154.94" smashed="yes">
-<attribute name="VALUE" x="231.14" y="158.496" size="1.778" layer="96" align="bottom-center"/>
+<instance part="P+12" gate="G$1" x="223.52" y="154.94" rot="MR0"/>
+<instance part="SUPPLY7" gate="G$1" x="238.76" y="154.94" smashed="yes">
+<attribute name="VALUE" x="238.76" y="158.496" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="JP21" gate="G$1" x="147.32" y="165.1" rot="R180"/>
-<instance part="P+13" gate="G$1" x="139.7" y="175.26" rot="MR0"/>
-<instance part="GND19" gate="1" x="139.7" y="149.86" rot="MR0"/>
-<instance part="SJ12" gate="G$1" x="223.52" y="149.86"/>
+<instance part="JP21" gate="G$1" x="144.78" y="165.1" rot="R180"/>
+<instance part="P+13" gate="G$1" x="137.16" y="175.26" rot="MR0"/>
+<instance part="GND19" gate="1" x="137.16" y="149.86" rot="MR0"/>
+<instance part="SJ11" gate="G$1" x="231.14" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -23417,8 +23417,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="8"/>
-<wire x1="142.24" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="154.94" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="154.94" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -23486,14 +23486,14 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
-<wire x1="218.44" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="149.86" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="SJ12" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="149.86" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="SJ11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="172.72" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="172.72" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -23543,8 +23543,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="7"/>
-<wire x1="142.24" y1="157.48" x2="139.7" y2="157.48" width="0.1524" layer="91"/>
-<label x="139.7" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="157.48" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
+<label x="137.16" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HW_RX" class="0">
@@ -23719,9 +23719,9 @@ V_BATT Range: 2.0V-4.3V</text>
 <net name="V_BATT" class="0">
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="V_BATT"/>
-<wire x1="228.6" y1="149.86" x2="231.14" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="149.86" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="SJ12" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="149.86" x2="238.76" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="SJ11" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="BAT1" gate="G$1" pin="+"/>
@@ -23736,8 +23736,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
-<label x="139.7" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="170.18" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
+<label x="137.16" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CD" class="0">
@@ -23813,8 +23813,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="5"/>
-<wire x1="142.24" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
-<label x="139.7" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
+<label x="137.16" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
@@ -23830,8 +23830,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="4"/>
-<wire x1="142.24" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
-<label x="139.7" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
+<label x="137.16" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_FIX" class="0">
@@ -23847,8 +23847,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="3"/>
-<wire x1="142.24" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
-<label x="139.7" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
+<label x="137.16" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_RST" class="0">
@@ -23859,8 +23859,8 @@ V_BATT Range: 2.0V-4.3V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="6"/>
-<wire x1="142.24" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
-<label x="139.7" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="160.02" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
+<label x="137.16" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
