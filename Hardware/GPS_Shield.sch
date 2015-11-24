@@ -22238,47 +22238,41 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0.0635" y="-0.4445" size="0.254" layer="51" rot="R40">PASTE</text>
 <rectangle x1="-0.2794" y1="-1.016" x2="1.4224" y2="0.9906" layer="31"/>
 </package>
-<package name="PAD-JUMPER-2-NO_NO_SILK">
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="PAD-JUMPER-2-NO_YES_SILK">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<package name="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK">
 <wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
 <wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
+<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="-1.016" x2="1.2192" y2="1.016" layer="31"/>
 </package>
-<package name="PAD-JUMPER-2-NO_YES_SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="-2.8575" y="2.2225" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
+<package name="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK_FULL_BOX">
+<description>Small solder jumper with big paste layer so it will short during reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
+<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
+<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
+</package>
+<package name="PAD-JUMPER-2-NC_BY_PASTE_NO_SILK">
+<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
+<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -22351,7 +22345,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.524" y="0.762"/>
 </polygon>
 </symbol>
-<symbol name="PAD-JUMPER-2-NO">
+<symbol name="PAD-JUMPER-2-NC_BY_PASTE">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
@@ -22360,6 +22354,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<circle x="0" y="0" radius="1.93440625" width="0" layer="95"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -22459,12 +22454,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER-PAD-2-NO" prefix="SJ">
+<deviceset name="JUMPER-PAD-2-NC_BY_PASTE" prefix="SJ">
 <gates>
-<gate name="G$1" symbol="PAD-JUMPER-2-NO" x="0" y="0"/>
+<gate name="G$1" symbol="PAD-JUMPER-2-NC_BY_PASTE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PAD-JUMPER-2-NO_NO_SILK">
+<device name="" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -22473,7 +22468,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name=""/>
 </technologies>
 </device>
-<device name="YES_SILK" package="PAD-JUMPER-2-NO_YES_SILK">
+<device name="FULL-BOX-SILK" package="PAD-JUMPER-2-NC_BY_PASTE_YES_SILK_FULL_BOX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -22482,125 +22477,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name=""/>
 </technologies>
 </device>
-<device name="ROUND" package="PAD-JUMPER-2-NO_YES_SILK_ROUND">
+<device name="NO-SILK" package="PAD-JUMPER-2-NC_BY_PASTE_NO_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-RF">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="EM406">
-<description>&lt;h3&gt;6-Pin Vertical JST Connector&lt;/h3&gt;
-&lt;p&gt;&lt;ul&gt;&lt;li&gt;1.0mm pitch&lt;/li&gt;
-&lt;li&gt;JST-SH type&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Common interface for SparkFun GPS modules.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/GPS/EM406-SMDConnector-eSH.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="0" y1="-2.921" x2="5.08" y2="-2.921" width="0.254" layer="21"/>
-<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.635" width="0.254" layer="21"/>
-<wire x1="5.842" y1="0.635" x2="6.858" y2="0.635" width="0.254" layer="21"/>
-<wire x1="6.858" y1="0.635" x2="6.858" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-1.778" y1="0.635" x2="-0.762" y2="0.635" width="0.254" layer="21"/>
-<circle x="0" y="1.27" radius="0.1047" width="0.4064" layer="21"/>
-<smd name="P$1" x="-1.3" y="-2.225" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$2" x="6.3" y="-2.225" dx="1.2" dy="1.8" layer="1"/>
-<smd name="1" x="0" y="0" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="1" y="0" dx="0.6" dy="1.55" layer="1"/>
-<smd name="3" x="2" y="0" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="3" y="0" dx="0.6" dy="1.55" layer="1"/>
-<smd name="5" x="4" y="0" dx="0.6" dy="1.55" layer="1"/>
-<smd name="6" x="5" y="0" dx="0.6" dy="1.55" layer="1"/>
-<text x="1.27" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="1.27" y="-3.81" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="GP-735">
-<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
-
-&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
-
-&lt;p&gt;Features
-&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
-&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
-&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
-&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
-&lt;li&gt;UART-TTL interface support&lt;/li&gt;
-&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
-&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
-&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
-&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
-&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
-&lt;li&gt;Windows location sensor support&lt;/li&gt;
-&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<pin name="VCC" x="-10.16" y="5.08" length="short"/>
-<pin name="RX" x="-10.16" y="0" length="short"/>
-<pin name="TX" x="-10.16" y="2.54" length="short"/>
-<pin name="V_BAT" x="-10.16" y="-2.54" length="short"/>
-<pin name="PWR_CTRL" x="-10.16" y="-5.08" length="short"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="-10.414" size="1.778" layer="96" align="top-left">&gt;Value</text>
-<text x="-7.62" y="7.874" size="1.778" layer="95">&gt;Name</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GP-735" prefix="J">
-<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
-
-&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
-
-&lt;p&gt;Features
-&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
-&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
-&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
-&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
-&lt;li&gt;UART-TTL interface support&lt;/li&gt;
-&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
-&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
-&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
-&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
-&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
-&lt;li&gt;Windows location sensor support&lt;/li&gt;
-&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="GP-735" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-VERTICAL" package="EM406">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="PWR_CTRL" pad="6"/>
-<connect gate="G$1" pin="RX" pad="4"/>
-<connect gate="G$1" pin="TX" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="V_BAT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08249"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -23066,10 +22949,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP14" library="SparkFun-Connectors" deviceset="M10" device="NO_SILK_PTH_FEMALE"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="TXB0108" device=""/>
-<part name="J3" library="SparkFun-RF" deviceset="GP-735" device="-VERTICAL" value="DNP (GP-735-VERTICAL)"/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP15" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="P+9" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
@@ -23130,13 +23010,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+7" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="P+11" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="SJ11" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="Batt-3v3"/>
 <part name="P+12" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="JP21" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK_FEMALE_PTH"/>
 <part name="P+13" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
+<part name="SJ12" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device="" value="VBAT-3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -23144,13 +23023,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="142.24" x2="78.74" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="78.74" y1="142.24" x2="86.36" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="86.36" y1="142.24" x2="147.32" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
-<wire x1="147.32" y1="142.24" x2="248.92" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="142.24" x2="187.96" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
+<wire x1="187.96" y1="142.24" x2="248.92" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="50.8" x2="147.32" y2="83.82" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="83.82" x2="147.32" y2="88.9" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="88.9" x2="147.32" y2="142.24" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="86.36" y1="68.58" x2="0" y2="68.58" width="0.3048" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="50.8" x2="147.32" y2="35.56" width="0.3048" layer="97" style="shortdash"/>
-<text x="81.28" y="180.34" size="2.1844" layer="94">GPS Modules</text>
+<text x="81.28" y="180.34" size="2.1844" layer="94">GPS Module</text>
 <text x="2.54" y="137.16" size="2.1844" layer="94">Arduino Shield</text>
 <text x="88.9" y="45.72" size="2.1844" layer="94">Serial Switch</text>
 <text x="171.45" y="11.43" size="2.54" layer="94">Jim Lindblom</text>
@@ -23175,7 +23055,7 @@ output</text>
 <text x="50.8" y="170.18" size="1.27" layer="97">SJ1 disconnects 
 the power LED 
 indicator</text>
-<text x="238.76" y="175.26" size="1.27" layer="97" rot="MR0" align="top-left">SJ9 disconnects the
+<text x="177.8" y="175.26" size="1.27" layer="97" rot="MR0" align="top-left">SJ9 disconnects the
 GPS fix LED indicator</text>
 <text x="17.78" y="60.96" size="1.27" layer="97" align="top-left">SJ2 selects 3.3V
 or 5V on the
@@ -23196,15 +23076,18 @@ to be disconnected from D10</text>
 GPS RX and TX to/from D8 and D9.</text>
 <text x="106.68" y="175.26" size="1.27" layer="97">GP3906 VCC 
 Range: 3.3V +/-5%</text>
-<text x="137.16" y="175.26" size="1.27" layer="97">GP-735 VCC 
-Range: 3.1V-5.5V</text>
-<text x="236.22" y="162.56" size="1.27" layer="97" rot="R180" align="top-left">SJ11 connects VBAT to 3.3V.
+<text x="241.3" y="162.56" size="1.27" layer="97" rot="R180" align="top-left">SJ11 connects VBAT to 3.3V.
 (In case you don't have a
  battery laying around)</text>
+<wire x1="187.96" y1="142.24" x2="187.96" y2="185.42" width="0.3048" layer="97" style="shortdash"/>
+<text x="190.5" y="180.34" size="2.1844" layer="94">Battery Supply</text>
+<text x="208.28" y="177.8" size="1.27" layer="97" align="top-left">The MG2639 requires some form of 
+voltage supply on its VBACKUP input.
+V_BATT Range: 2.0V-4.3V</text>
 </plain>
 <instances>
-<instance part="BAT1" gate="G$1" x="198.12" y="160.02" rot="R270"/>
-<instance part="GND16" gate="1" x="198.12" y="147.32"/>
+<instance part="BAT1" gate="G$1" x="200.66" y="160.02" rot="R270"/>
+<instance part="GND16" gate="1" x="200.66" y="147.32"/>
 <instance part="C3" gate="G$1" x="165.1" y="111.76"/>
 <instance part="C4" gate="G$1" x="238.76" y="111.76"/>
 <instance part="P+10" gate="G$1" x="238.76" y="119.38"/>
@@ -23236,14 +23119,9 @@ Range: 3.1V-5.5V</text>
 <attribute name="NAME" x="19.558" y="101.6" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U3" gate="G$1" x="203.2" y="111.76" rot="MR0"/>
-<instance part="J3" gate="G$1" x="149.86" y="160.02"/>
-<instance part="SUPPLY8" gate="G$1" x="198.12" y="172.72" smashed="yes">
-<attribute name="VALUE" x="198.12" y="176.276" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="200.66" y="172.72" smashed="yes">
+<attribute name="VALUE" x="200.66" y="176.276" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="127" y="167.64" smashed="yes">
-<attribute name="VALUE" x="127" y="171.196" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="GND12" gate="1" x="137.16" y="147.32"/>
 <instance part="JP15" gate="G$1" x="132.08" y="25.4" rot="R180"/>
 <instance part="P+9" gate="G$1" x="218.44" y="127" rot="MR0"/>
 <instance part="GND15" gate="1" x="187.96" y="93.98"/>
@@ -23253,9 +23131,9 @@ Range: 3.1V-5.5V</text>
 <instance part="U2" gate="G$1" x="111.76" y="160.02"/>
 <instance part="P+3" gate="G$1" x="96.52" y="172.72"/>
 <instance part="GND10" gate="1" x="96.52" y="147.32"/>
-<instance part="D2" gate="G$1" x="241.3" y="175.26"/>
-<instance part="GND18" gate="1" x="241.3" y="147.32"/>
-<instance part="R4" gate="G$1" x="241.3" y="157.48" rot="R90"/>
+<instance part="D2" gate="G$1" x="180.34" y="175.26"/>
+<instance part="GND18" gate="1" x="180.34" y="147.32"/>
+<instance part="R4" gate="G$1" x="180.34" y="157.48" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="88.9" y="172.72" smashed="yes">
 <attribute name="VALUE" x="88.9" y="176.276" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -23329,9 +23207,9 @@ Range: 3.1V-5.5V</text>
 <attribute name="NAME" x="50.8" y="166.624" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="50.8" y="163.576" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="SJ9" gate="G$1" x="233.68" y="180.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="233.68" y="178.562" size="1.778" layer="95" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="233.68" y="181.864" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SJ9" gate="G$1" x="172.72" y="180.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="172.72" y="178.562" size="1.778" layer="95" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="172.72" y="181.864" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="S1" gate="G$1" x="5.08" y="83.82" rot="MR90"/>
 <instance part="GND1" gate="1" x="5.08" y="73.66" rot="MR0"/>
@@ -23353,18 +23231,14 @@ Range: 3.1V-5.5V</text>
 <instance part="R3" gate="G$1" x="142.24" y="127" rot="R90"/>
 <instance part="P+6" gate="G$1" x="134.62" y="134.62"/>
 <instance part="P+7" gate="G$1" x="142.24" y="134.62"/>
-<instance part="P+11" gate="G$1" x="137.16" y="167.64"/>
-<instance part="SJ11" gate="G$1" x="220.98" y="149.86" smashed="yes">
-<attribute name="NAME" x="220.98" y="151.638" size="1.778" layer="95" rot="R180" align="top-center"/>
-<attribute name="VALUE" x="220.98" y="147.828" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+<instance part="P+12" gate="G$1" x="215.9" y="154.94" rot="MR0"/>
+<instance part="SUPPLY7" gate="G$1" x="231.14" y="154.94" smashed="yes">
+<attribute name="VALUE" x="231.14" y="158.496" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="P+12" gate="G$1" x="213.36" y="154.94" rot="MR0"/>
-<instance part="SUPPLY7" gate="G$1" x="226.06" y="154.94" smashed="yes">
-<attribute name="VALUE" x="226.06" y="158.496" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="JP21" gate="G$1" x="180.34" y="162.56" rot="R180"/>
-<instance part="P+13" gate="G$1" x="172.72" y="172.72" rot="MR0"/>
-<instance part="GND19" gate="1" x="172.72" y="147.32" rot="MR0"/>
+<instance part="JP21" gate="G$1" x="147.32" y="165.1" rot="R180"/>
+<instance part="P+13" gate="G$1" x="139.7" y="175.26" rot="MR0"/>
+<instance part="GND19" gate="1" x="139.7" y="149.86" rot="MR0"/>
+<instance part="SJ12" gate="G$1" x="223.52" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -23395,7 +23269,7 @@ Range: 3.1V-5.5V</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="198.12" y1="154.94" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="154.94" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="BAT1" gate="G$1" pin="-"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
@@ -23413,12 +23287,6 @@ Range: 3.1V-5.5V</text>
 <wire x1="71.12" y1="154.94" x2="71.12" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="GND"/>
-<wire x1="139.7" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="152.4" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
@@ -23484,7 +23352,7 @@ Range: 3.1V-5.5V</text>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="152.4" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="152.4" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
@@ -23549,8 +23417,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="8"/>
-<wire x1="175.26" y1="152.4" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="154.94" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -23617,21 +23485,15 @@ Range: 3.1V-5.5V</text>
 <wire x1="142.24" y1="134.62" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="VCC"/>
-<pinref part="P+11" gate="G$1" pin="3.3V"/>
-<wire x1="139.7" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="165.1" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SJ11" gate="G$1" pin="1"/>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
-<wire x1="215.9" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="149.86" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="149.86" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="SJ12" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="170.18" x2="172.72" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="170.18" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="172.72" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -23681,8 +23543,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="7"/>
-<wire x1="175.26" y1="154.94" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
-<label x="172.72" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="157.48" x2="139.7" y2="157.48" width="0.1524" layer="91"/>
+<label x="139.7" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HW_RX" class="0">
@@ -23857,19 +23719,14 @@ Range: 3.1V-5.5V</text>
 <net name="V_BATT" class="0">
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="V_BATT"/>
-<pinref part="SJ11" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="149.86" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="149.86" x2="231.14" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="149.86" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="SJ12" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="BAT1" gate="G$1" pin="+"/>
 <pinref part="SUPPLY8" gate="G$1" pin="V_BATT"/>
-<wire x1="198.12" y1="165.1" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="V_BAT"/>
-<wire x1="139.7" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="127" y1="157.48" x2="127" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="G$1" pin="V_BATT"/>
+<wire x1="200.66" y1="165.1" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VBACKUP"/>
@@ -23879,8 +23736,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
-<label x="172.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
+<label x="139.7" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CD" class="0">
@@ -23945,11 +23802,6 @@ Range: 3.1V-5.5V</text>
 </net>
 <net name="GPS_RX" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="RX"/>
-<wire x1="139.7" y1="160.02" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
-<label x="137.16" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="A7"/>
 <label x="220.98" y="101.6" size="1.27" layer="95" xref="yes"/>
 <wire x1="215.9" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
@@ -23961,16 +23813,11 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="5"/>
-<wire x1="175.26" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
-<label x="172.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
+<label x="139.7" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="TX"/>
-<wire x1="139.7" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
-<label x="137.16" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="A8"/>
 <wire x1="215.9" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
@@ -23983,8 +23830,8 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="4"/>
-<wire x1="175.26" y1="162.56" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
-<label x="172.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<label x="139.7" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_FIX" class="0">
@@ -23995,13 +23842,13 @@ Range: 3.1V-5.5V</text>
 </segment>
 <segment>
 <pinref part="SJ9" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="180.34" x2="226.06" y2="180.34" width="0.1524" layer="91"/>
-<label x="226.06" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="167.64" y1="180.34" x2="165.1" y2="180.34" width="0.1524" layer="91"/>
+<label x="165.1" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP21" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="165.1" x2="172.72" y2="165.1" width="0.1524" layer="91"/>
-<label x="172.72" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<label x="139.7" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPS_RST" class="0">
@@ -24011,14 +23858,9 @@ Range: 3.1V-5.5V</text>
 <label x="96.52" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="PWR_CTRL"/>
-<wire x1="139.7" y1="154.94" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
-<label x="137.16" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP21" gate="G$1" pin="6"/>
-<wire x1="175.26" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
-<label x="172.72" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
+<label x="139.7" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -24263,15 +24105,15 @@ Range: 3.1V-5.5V</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="162.56" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="162.56" x2="180.34" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="SJ9" gate="G$1" pin="1"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="238.76" y1="180.34" x2="241.3" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="180.34" x2="241.3" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="180.34" x2="180.34" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="180.34" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
