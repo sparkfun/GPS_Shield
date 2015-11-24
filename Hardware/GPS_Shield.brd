@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -321,6 +321,9 @@ CD</text>
 <text x="53.6575" y="27.94" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">SCK</text>
 <text x="53.6575" y="30.48" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">MISO</text>
 <text x="58.42" y="28.0035" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">MOSI</text>
+<text x="12.573" y="7.366" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="top-left">Battery supply
+required for
+operation!</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -2684,7 +2687,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J2" pad="GND"/>
 <via x="19.05" y="37.084" extent="1-16" drill="0.508"/>
 <via x="21.59" y="11.684" extent="1-16" drill="0.508"/>
-<via x="16.891" y="10.541" extent="1-16" drill="0.508"/>
+<via x="17.526" y="11.049" extent="1-16" drill="0.508"/>
 <via x="24.003" y="13.589" extent="1-16" drill="0.508"/>
 <via x="0.762" y="14.859" extent="1-16" drill="0.508"/>
 <via x="0.762" y="28.321" extent="1-16" drill="0.508"/>
@@ -2905,10 +2908,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="V_BATT">
 <contactref element="BAT1" pad="PWR@1"/>
 <contactref element="U2" pad="4"/>
-<wire x1="3.81" y1="11.43" x2="13.843" y2="11.43" width="0.254" layer="16"/>
-<wire x1="13.843" y1="11.43" x2="17.018" y2="11.43" width="0.254" layer="16"/>
-<wire x1="19.05" y1="13.462" x2="17.018" y2="11.43" width="0.254" layer="16"/>
-<wire x1="13.843" y1="11.43" x2="13.843" y2="6.477" width="0.254" layer="16"/>
 <wire x1="13.843" y1="6.477" x2="16.51" y2="3.81" width="0.254" layer="16"/>
 <via x="16.51" y="3.81" extent="1-16" drill="0.508"/>
 <wire x1="16.51" y1="3.81" x2="17.272" y2="3.81" width="0.254" layer="1"/>
@@ -2917,12 +2916,13 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="JP21" pad="2"/>
 <wire x1="18.795" y1="19.34" x2="20.03" y2="19.34" width="0.254" layer="1"/>
 <wire x1="20.03" y1="19.34" x2="21.59" y2="17.78" width="0.254" layer="1"/>
-<wire x1="21.59" y1="17.78" x2="19.05" y2="15.24" width="0.254" layer="16"/>
-<wire x1="19.05" y1="15.24" x2="19.05" y2="13.462" width="0.254" layer="16"/>
-<wire x1="3.36" y1="10.98" x2="3.81" y2="11.43" width="0.254" layer="1"/>
-<via x="3.81" y="11.43" extent="1-16" drill="0.508"/>
 <contactref element="SJ11" pad="2"/>
-<wire x1="2.032" y1="10.98" x2="3.36" y2="10.98" width="0.254" layer="1"/>
+<wire x1="2.032" y1="10.98" x2="3.741" y2="10.98" width="0.254" layer="1"/>
+<wire x1="14.79" y1="10.98" x2="21.59" y2="17.78" width="0.254" layer="16"/>
+<via x="3.741" y="10.98" extent="1-16" drill="0.508"/>
+<wire x1="3.741" y1="10.98" x2="13.843" y2="10.98" width="0.254" layer="16"/>
+<wire x1="13.843" y1="10.98" x2="14.79" y2="10.98" width="0.254" layer="16"/>
+<wire x1="13.843" y1="6.477" x2="13.843" y2="10.98" width="0.254" layer="16"/>
 </signal>
 <signal name="CD">
 <contactref element="J2" pad="CD1"/>
@@ -3431,37 +3431,37 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,16,c14914f947267257"/>
 <approved hash="19,16,41de98668ac6b3bf"/>
 <approved hash="19,16,458761abadc15366"/>
-<approved hash="19,16,7e44a331d410f50e"/>
 <approved hash="19,16,4060b34544874a72"/>
+<approved hash="19,16,7e44a331d410f50e"/>
 <approved hash="19,16,f720c441c33f9d0d"/>
 <approved hash="19,16,819d66fb23f638fb"/>
 <approved hash="19,16,33f8009b1391cb89"/>
 <approved hash="19,16,bfd277c8b30a86c0"/>
 <approved hash="19,16,c72830d8b512beac"/>
 <approved hash="19,16,487fe0db5244529d"/>
-<approved hash="19,16,04cd94608143b993"/>
 <approved hash="19,16,b855d64991105771"/>
 <approved hash="19,16,39e8add480b4bcf5"/>
-<approved hash="5,16,185bdcd7045bd38b"/>
-<approved hash="19,16,b3c71bfb17f4bfc8"/>
+<approved hash="19,16,04cd94608143b993"/>
 <approved hash="19,16,b23f1a031bbcb380"/>
+<approved hash="19,16,b3c71bfb17f4bfc8"/>
+<approved hash="5,16,185bdcd7045bd38b"/>
 <approved hash="5,16,aed538b2dfe52306"/>
 <approved hash="19,16,debde3b4dd1648e1"/>
-<approved hash="19,16,09540c57982d35d0"/>
-<approved hash="19,16,b517dda38bfc4bb6"/>
 <approved hash="19,16,3529227f9a0025a8"/>
-<approved hash="19,16,b3f81bc41ab4b288"/>
-<approved hash="5,16,13195c126fe25f4d"/>
+<approved hash="19,16,b517dda38bfc4bb6"/>
+<approved hash="19,16,09540c57982d35d0"/>
 <approved hash="5,16,a11e53b55de62ab8"/>
+<approved hash="5,16,13195c126fe25f4d"/>
+<approved hash="19,16,b3f81bc41ab4b288"/>
 <approved hash="19,16,b2201a1c0604ae38"/>
-<approved hash="5,16,df134cc8bccbd1f6"/>
 <approved hash="5,16,a221e927bf9573ad"/>
-<approved hash="19,16,68ff6e416618db5d"/>
+<approved hash="5,16,df134cc8bccbd1f6"/>
 <approved hash="19,16,8a4db4fc08998dd3"/>
-<approved hash="19,16,745558d449ccdeb6"/>
 <approved hash="19,16,b76f61c809696435"/>
-<approved hash="19,16,2ec64afa46ca22f6"/>
+<approved hash="19,16,745558d449ccdeb6"/>
+<approved hash="19,16,68ff6e416618db5d"/>
 <approved hash="19,16,2f3e4b024a822ebe"/>
+<approved hash="19,16,2ec64afa46ca22f6"/>
 <approved hash="19,16,44f0684053829b3b"/>
 <approved hash="19,16,0b4e4a2ef7ad66c9"/>
 <approved hash="19,16,79425a8d802347e5"/>
@@ -3478,10 +3478,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,16,65163d18f04ef0bb"/>
 <approved hash="19,16,1b8e5c31acd72990"/>
 <approved hash="19,16,1bbc51ff60a5e81e"/>
-<approved hash="19,16,236980871c19b3ce"/>
-<approved hash="19,16,f8e0cc41c7d01b4a"/>
 <approved hash="19,16,9edb327aa7880710"/>
 <approved hash="19,16,e956e810cf9326ee"/>
+<approved hash="19,16,236980871c19b3ce"/>
+<approved hash="19,16,f8e0cc41c7d01b4a"/>
 <approved hash="19,16,19101d2d6f4283bc"/>
 <approved hash="19,16,c68aff8a6529b4ea"/>
 <approved hash="19,16,a9bc51f47ba84121"/>
