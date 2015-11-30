@@ -164,11 +164,11 @@
 <wire x1="57.15" y1="2.54" x2="57.15" y2="0" width="0.2032" layer="20"/>
 <wire x1="57.15" y1="0" x2="14.868025" y2="0" width="0.2032" layer="20"/>
 <wire x1="14.868025" y1="0" x2="14.4190125" y2="0.1859875" width="0.2032" layer="20" curve="-45"/>
-<wire x1="14.4190125" y1="0.1859875" x2="12.2509875" y2="2.3540125" width="0.2032" layer="20"/>
-<wire x1="12.2509875" y1="2.3540125" x2="11.801975" y2="2.54" width="0.2032" layer="20" curve="45"/>
-<wire x1="11.801975" y1="2.54" x2="7.883025" y2="2.54" width="0.2032" layer="20"/>
-<wire x1="7.883025" y1="2.54" x2="7.4340125" y2="2.3540125" width="0.2032" layer="20" curve="45"/>
-<wire x1="7.4340125" y1="2.3540125" x2="5.2659875" y2="0.1859875" width="0.2032" layer="20"/>
+<wire x1="14.4190125" y1="0.1859875" x2="12.1239875" y2="1.8460125" width="0.2032" layer="20"/>
+<wire x1="12.1239875" y1="1.8460125" x2="11.674975" y2="2.032" width="0.2032" layer="20" curve="45"/>
+<wire x1="11.674975" y1="2.032" x2="7.756025" y2="2.032" width="0.2032" layer="20"/>
+<wire x1="7.756025" y1="2.032" x2="7.3070125" y2="1.8460125" width="0.2032" layer="20" curve="45"/>
+<wire x1="7.3070125" y1="1.8460125" x2="5.2659875" y2="0.1859875" width="0.2032" layer="20"/>
 <wire x1="5.2659875" y1="0.1859875" x2="4.816975" y2="0" width="0.2032" layer="20" curve="-45"/>
 <wire x1="4.816975" y1="0" x2="2.54" y2="0" width="0.2032" layer="20"/>
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.2032" layer="20"/>
@@ -326,23 +326,6 @@ required for
 operation!</text>
 </plain>
 <libraries>
-<library name="SparkFun">
-<packages>
-<package name="BATTCON_12MM">
-<wire x1="-6.096" y1="4.318" x2="-3.81" y2="6.604" width="0.127" layer="21" curve="-90"/>
-<wire x1="-3.81" y1="6.604" x2="3.81" y2="6.604" width="0.127" layer="21"/>
-<wire x1="3.81" y1="6.604" x2="6.096" y2="4.318" width="0.127" layer="21" curve="-90"/>
-<wire x1="6.096" y1="4.318" x2="6.096" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="6.096" y1="-3.302" x2="3.048" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="3.048" y1="-6.35" x2="-3.048" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="-3.048" y1="-6.35" x2="-6.096" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="-6.096" y1="-3.302" x2="-6.096" y2="4.318" width="0.127" layer="21"/>
-<smd name="GND" x="0" y="0" dx="3.9624" dy="3.9624" layer="1"/>
-<smd name="PWR@1" x="-7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
-<smd name="PWR@2" x="7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
@@ -1896,6 +1879,22 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
 </package>
+<package name="BATTCON_12MM">
+<wire x1="-6.096" y1="4.318" x2="-3.81" y2="5.334" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3.81" y1="5.334" x2="6.096" y2="4.318" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6.096" y1="4.318" x2="6.096" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="6.096" y1="-3.302" x2="3.048" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="3.048" y1="-6.35" x2="-3.048" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="-3.048" y1="-6.35" x2="-6.096" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="-6.096" y1="-3.302" x2="-6.096" y2="4.318" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="5.334" x2="-3.81" y2="5.334" width="0.2032" layer="21" curve="-90"/>
+<smd name="GND" x="0" y="0" dx="8" dy="8" layer="1" roundness="100" cream="no"/>
+<smd name="PWR@1" x="-7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
+<smd name="PWR@2" x="7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1" width="2" layer="31"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Passives">
@@ -2480,7 +2479,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </pass>
 </autorouter>
 <elements>
-<element name="BAT1" library="SparkFun" package="BATTCON_12MM" value="12mm" x="9.906" y="6.223" smashed="yes" rot="R180"/>
+<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM" value="12mm" x="9.906" y="6.223" smashed="yes" rot="R180">
+<attribute name="PROD_ID" value="BATT-08044" x="9.906" y="6.223" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="27.305" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.0035" y="40.259" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" value="0.1uF" x="26.1874" y="40.3733" size="0.508" layer="27" rot="R270"/>
